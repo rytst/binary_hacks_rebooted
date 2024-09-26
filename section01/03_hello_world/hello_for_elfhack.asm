@@ -5,8 +5,8 @@ _start:
     call callee
     db 'Hello, World!', 0x0a ; 0xa: new line code
 callee:
-    mov rdx, 0xe             ; length of writing data
-    pop rsi                  ; first address of writing data
+    mov rdx, 0xe             ; length of data to write
+    pop rsi                  ; first address of data to write
                              ; pop the address of the next instruction of `call callee`
                              ; and store the poped address in rsi
     mov rdi, 0x1             ; file descriptor

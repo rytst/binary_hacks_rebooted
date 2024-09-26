@@ -2,8 +2,8 @@ section .text
     global _start                ; `global` directive in NASM specific
 section .text
 _start:
-    mov rdx, 0xe                 ; length of writing data
-    mov rsi, msg                 ; first address of writing data
+    mov rdx, 0xe                 ; length of data to write
+    mov rsi, msg                 ; first address of data to write
     mov rdi, 0x1                 ; file descriptor
     mov rax, 0x1                 ; write syscall
     syscall                      ; calling syscall
