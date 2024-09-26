@@ -19,6 +19,6 @@ int main(void)
 
     // copy hello_for_elfhack_len characters from hello_for_elfhack to code
     memcpy(code, hello_for_elfhack, hello_for_elfhack_len);
-    void (*fn)(void) = (void (*)(void))code;
+    void (*fn)(void) = (void (*)(void))code; // function pointer
     fn();
 }
