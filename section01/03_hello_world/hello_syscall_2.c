@@ -6,5 +6,4 @@ int main()
 {
     // write(1, "Hello, World!\n", 14);
     syscall( SYS_write, 1, "Hello, World!\n", 14);
-    return 0;
 }
