@@ -1,5 +1,6 @@
 section .text
-global _start                    ; `global` directive in NASM specific
+    global _start                ; `global` directive in NASM specific
+section .text
 _start:
     mov rdx, 0xe                 ; length of writing data
     mov rsi, msg                 ; first address of writing data
